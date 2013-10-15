@@ -28,6 +28,9 @@ search()
 ### "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten". From these two vectors, 
 ### create a dataframe "nw" with each vector as a separate column. 
 ### What should you type to check the attributes of "nw"?
+natNums=c(1:10)
+alphaNums=c("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten")
+nw=data.frame(natNums,alphaNums)
 attributes(nw)
 
 
@@ -51,6 +54,8 @@ a=matrix(1:10,2,5)
 ### Create a vector "x" comprising all natural numbers from 1 to 6 and another 
 ### vector "y" comprising all natural numbers from 5 to 10. 
 ### What should you type to combine them in a matrix of 2 rows and 6 columns?
+x=c(1:6)
+y=c(5:10)
 rbind(x,y)
 
 ### Question 10
