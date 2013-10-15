@@ -9,7 +9,7 @@ library(sm)
 
 ### working directory setup
 #getwd()
-#setwd("C:/Users/mnapoleo/stats101/Lab2")
+#setwd("C:/Users/mnapoleo/statsOneCourse/Lab2")
 
 # Read data into a dataframe called impact
 data <- read.table("Stats1.13.HW.02.txt", header = T)data
