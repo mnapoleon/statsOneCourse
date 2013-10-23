@@ -7,4 +7,4 @@ Statistics work for stats one course from coursea. Scripts and data.
 * Assignment #2 - completed
 * Assignment #3 - completed
 * Assignment #4 - completed 
-* Assignment #5 - in progress 
+* Assignment #5 - completed
