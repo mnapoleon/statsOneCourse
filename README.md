@@ -9,4 +9,3 @@ Statistics work for stats one course from coursea. Scripts and data.
 * Assignment #4 - completed 
 * Assignment #5 - completed
 * Assignment #6 - IN PROGRESS
-* Midterm       - IN PROGRESS
