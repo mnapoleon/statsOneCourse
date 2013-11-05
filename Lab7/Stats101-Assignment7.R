@@ -29,7 +29,6 @@ cor(data)
 ### What percentage of variance in happiness is explained by extraversion?
 model1 <- lm(data$happy ~ data$extra)
 summary(model1)
-confint(model1)
 
 # 4%  
 
@@ -38,41 +37,36 @@ confint(model1)
 ### extraversion and diversity of life experience as predictors?
 model2 <- lm(data$happy ~ data$extra + data$diverse)
 summary(model2)
-confint(model2)
 
 # 7%
 
 ### Question 6
 ### What is the 95% confidence interval for the regression coefficient for extraversion 
 ### when it is the only predictor of happiness?
-model3 <- lm(data$extra ~ data$happy)
-summary(model3)
-confint(model3)
+confint(model1)
 
-# 0.04 0.24 *
+# .07 .48
 
 ### Question 7
 ### What is the 95% confidence interval for the regression coefficient for extraversion 
 ### when it and diversity of life experience are both predictors of happiness?
-model4 <- lm(data$extra ~ data$happy + data$diverse)
-summary(model4)
-confint(model4)
+confint(model2)
 
-# 2.49 3.27 *
+# .02 .43
 
 ### Question 8
 ### What is the unstandardized regression estimate of the indirect effect?
-model.ALL <- sobel(data$happy, data$diverse, data$extra) 
+model.ALL <- sobel(data$extra, data$diverse, data$happy) 
 model.ALL
 
-# 0.03  *
+# .05
 
 ### Question 9
 ### What is the z-value of the Sobel test?
-model.ALL <- sobel(data$happy, data$diverse, data$extra) 
+model.ALL <- sobel(data$extra, data$diverse, data$happy) 
 model.ALL
 
-# 1.87  *
+# 1.88
 
 ### Question 10
 ### Do these analyses suggest full mediation, partial mediation, or no mediation?
