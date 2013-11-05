@@ -11,56 +11,54 @@ data <- read.table("stats1-datafiles-Stats1.13.HW.07.txt", header = T)
 describeBy(data) 
 ### Question 1
 ### What is the correlation between extraversion and happiness?
-model1 <- lm(data$extra ~ data$happy)
-summary(model1)
-confint(model1)
+cor(data)
 
-# 3.14680  *
+# 0.19
 
 ### Question 2
 ### What is the correlation between extraversion and diversity of life experience?
-model2 <- lm(data$extra ~ data$diverse)
-summary(model2)
-confint(model2)
 
-# 3.17016  *
+# 0.21
 
 ### Question 3
 ### What is the correlation between diversity of life experience and happiness?
-model3 <- lm(data$diverse ~ data$happy)
-summary(model3)
-confint(model3)
 
-# 2.00633  *
+# 0.21
 
 ### Question 4
 ### What percentage of variance in happiness is explained by extraversion?
-model4 <- lm(data$happy ~ data$extra)
-summary(model4)
-confint(model4)
+model1 <- lm(data$happy ~ data$extra)
+summary(model1)
+confint(model1)
 
 # 4%  
 
 ### Question 5
 ### What percentage of variance in happiness is explained by a model with both 
 ### extraversion and diversity of life experience as predictors?
-model5 <- lm(data$happy ~ data$extra + data$diverse)
-summary(model5)
-confint(model5)
+model2 <- lm(data$happy ~ data$extra + data$diverse)
+summary(model2)
+confint(model2)
 
 # 7%
 
 ### Question 6
 ### What is the 95% confidence interval for the regression coefficient for extraversion 
 ### when it is the only predictor of happiness?
+model3 <- lm(data$extra ~ data$happy)
+summary(model3)
+confint(model3)
 
-# 2.82 3.48  *
+# 0.04 0.24 *
 
 ### Question 7
 ### What is the 95% confidence interval for the regression coefficient for extraversion 
 ### when it and diversity of life experience are both predictors of happiness?
+model4 <- lm(data$extra ~ data$happy + data$diverse)
+summary(model4)
+confint(model4)
 
-# 0.02 0.43  *
+# 2.49 3.27 *
 
 ### Question 8
 ### What is the unstandardized regression estimate of the indirect effect?
@@ -79,4 +77,4 @@ model.ALL
 ### Question 10
 ### Do these analyses suggest full mediation, partial mediation, or no mediation?
 
-# no mediation  *
+# partial
