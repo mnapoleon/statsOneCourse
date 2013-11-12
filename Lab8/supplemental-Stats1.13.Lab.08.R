@@ -31,7 +31,7 @@ library(ggplot2)
 library(reshape)
 
 # Read data into a dataframe called wm
-wm = read.table("Stats1.13.Lab.08.txt", header = T)
+wm = read.table("datafiles-Stats1.13.Lab.08.txt", header = T)
 
 # If you want to view the data
 # View(wm)
