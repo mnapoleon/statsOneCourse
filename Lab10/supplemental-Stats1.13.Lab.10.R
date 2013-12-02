@@ -16,12 +16,12 @@
 # Check your working directory
 # getwd()
 # If necessary, set your working directory
-# setwd("/Volumes/Conway/R")
+setwd("/Users/michaelnapoleon/coursea/statsOneCourse/Lab10")
 
 # If necessary, install packages
-# install.packages("psych")
-# install.packages("aod")
-# install.packages("QuantPsyc")
+install.packages("psych")
+install.packages("aod")
+install.packages("QuantPsyc")
 
 # Load packages
 library(psych)
@@ -29,7 +29,7 @@ library(aod)
 library(QuantPsyc)
 
 # Read the data into a dataframe called BL
-BL <- read.table("Stats1.13.Lab.10.txt", header = T)
+BL <- read.table("datafiles-Stats1.13.Lab.10.txt", header = T)
 
 # If you want to view the data
 # View(BL)
