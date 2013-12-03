@@ -45,4 +45,3 @@
 ### Based on the present data, are you convinced that malleable feedback is beneficial to performance 
 ### when engaging in a cognitive training program?
 
-
